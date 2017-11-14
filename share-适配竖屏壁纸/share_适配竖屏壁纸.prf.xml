@@ -1,0 +1,204 @@
+<TaskerData sr="" dvi="1" tv="4.9u3m">
+	<Profile sr="prof67" ve="2">
+		<cdate>1506822883263</cdate>
+		<clp>true</clp>
+		<edate>1510338099151</edate>
+		<id>67</id>
+		<mid0>66</mid0>
+		<nme>share-适配竖屏壁纸</nme>
+		<Event sr="con0" ve="2">
+			<code>580953799</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.twofortyfouram.locale.intent.extra.BLURB>Command: 适配竖屏壁纸
+Sender: all (regex) (case ins) (exact)
+Subject: all (regex) (case ins) (exact)
+Text: all (regex) (case ins) (exact)
+Image: all (regex) (case ins) (exact)</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<configcaseinsensitiveimage>true</configcaseinsensitiveimage>
+					<configcaseinsensitiveimage-type>java.lang.Boolean</configcaseinsensitiveimage-type>
+					<configcaseinsensitivesender>true</configcaseinsensitivesender>
+					<configcaseinsensitivesender-type>java.lang.Boolean</configcaseinsensitivesender-type>
+					<configcaseinsensitivesub>true</configcaseinsensitivesub>
+					<configcaseinsensitivesub-type>java.lang.Boolean</configcaseinsensitivesub-type>
+					<configcaseinsensitivetext>true</configcaseinsensitivetext>
+					<configcaseinsensitivetext-type>java.lang.Boolean</configcaseinsensitivetext-type>
+					<configcommand>适配竖屏壁纸</configcommand>
+					<configcommand-type>java.lang.String</configcommand-type>
+					<configexactimage>true</configexactimage>
+					<configexactimage-type>java.lang.Boolean</configexactimage-type>
+					<configexactsender>true</configexactsender>
+					<configexactsender-type>java.lang.Boolean</configexactsender-type>
+					<configexactsub>true</configexactsub>
+					<configexactsub-type>java.lang.Boolean</configexactsub-type>
+					<configexacttext>true</configexacttext>
+					<configexacttext-type>java.lang.Boolean</configexacttext-type>
+					<configimage>&lt;null&gt;</configimage>
+					<configimage-type>java.lang.String</configimage-type>
+					<configregeximage>true</configregeximage>
+					<configregeximage-type>java.lang.Boolean</configregeximage-type>
+					<configregexsender>true</configregexsender>
+					<configregexsender-type>java.lang.Boolean</configregexsender-type>
+					<configregexsub>true</configregexsub>
+					<configregexsub-type>java.lang.Boolean</configregexsub-type>
+					<configregextext>true</configregextext>
+					<configregextext-type>java.lang.Boolean</configregextext-type>
+					<configsender>&lt;null&gt;</configsender>
+					<configsender-type>java.lang.String</configsender-type>
+					<configsubject>&lt;null&gt;</configsubject>
+					<configsubject-type>java.lang.String</configsubject-type>
+					<configtext>&lt;null&gt;</configtext>
+					<configtext-type>java.lang.String</configtext-type>
+					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>true</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>
+					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>java.lang.Boolean</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>configcommand plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>82369306-4ee0-43ef-9b80-8c8325586ad4</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoshare.intent.IntentReceiveShareEvent</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoshare</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoshare.activity.ActivityConfigReceiveShareEvent</Str>
+		</Event>
+	</Profile>
+	<Task sr="task66">
+		<cdate>1506745869498</cdate>
+		<edate>1510337998957</edate>
+		<id>66</id>
+		<nme>适配竖屏壁纸</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">适配竖屏壁纸开始</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>配置根路径</label>
+			<Str sr="arg0" ve="3">%root_path</Str>
+			<Str sr="arg1" ve="3">/storage/sdcard1/software_me/tasker/doWallpaperAdaptPortrait</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">comm-img-color</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">%img_path</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">%img_bottom_color</Str>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">请通过图片分享执行！</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act13" ve="7">
+			<code>137</code>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3">适配竖屏壁纸</Str>
+		</Action>
+		<Action sr="act14" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act15" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">comm-img-scale</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">1080;1920;%img_path;%img_path</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act16" ve="7">
+			<code>109</code>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3">%img_path</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act17" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">适配竖屏壁纸完成</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<label>图片路径</label>
+			<Str sr="arg0" ve="3">%img_path</Str>
+			<Str sr="arg1" ve="3">%root_path/wallpaper.jpg</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>37</code>
+			<label>通过分享方式</label>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%asfile1</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">comm-img-path-vaild</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">%asfile1</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">%is_img_flag</Str>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%is_img_flag</lhs>
+					<op>0</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">选择的不是图片！</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>126</code>
+			<Str sr="arg0" ve="3">0</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>404</code>
+			<Str sr="arg0" ve="3">%asfile1</Str>
+			<Str sr="arg1" ve="3">%img_path</Str>
+			<Int sr="arg2" val="1"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>cust_menu_dropdown_panel_holo_light</nme>
+		</Img>
+	</Task>
+</TaskerData>
