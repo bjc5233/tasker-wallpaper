@@ -1,9 +1,10 @@
-<TaskerData sr="" dvi="1" tv="4.9u3m">
+<TaskerData sr="" dvi="1" tv="4.9u4">
 	<Profile sr="prof74" ve="2">
 		<cdate>1506894572598</cdate>
 		<clp>true</clp>
-		<edate>1510640428401</edate>
+		<edate>1511847868674</edate>
 		<id>74</id>
+		<limit>true</limit>
 		<mid0>31</mid0>
 		<nme>一日猫壁纸</nme>
 		<Time sr="con0">
@@ -21,7 +22,7 @@
 	</Profile>
 	<Task sr="task31">
 		<cdate>1499486239188</cdate>
-		<edate>1510634673381</edate>
+		<edate>1518279066436</edate>
 		<id>31</id>
 		<nme>一日猫壁纸</nme>
 		<pri>100</pri>
@@ -36,7 +37,7 @@
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>118</code>
-			<Str sr="arg0" ve="3">https://api.yirimao.com/activity/get-newest-activity</Str>
+			<Str sr="arg0" ve="3">https://app-api.yirimao.com/v1/activity/activity/newest</Str>
 			<Str sr="arg1" ve="3"/>
 			<Str sr="arg2" ve="3"/>
 			<Str sr="arg3" ve="3"/>
@@ -57,10 +58,11 @@
 		<Action sr="act3" ve="7">
 			<code>129</code>
 			<label>解析JSON</label>
-			<Str sr="arg0" ve="3">var data = JSON.parse(json).data;
-var img_name = data.cards[0].created_at.toString();
-var img_url = data.cards[0].image_url;
-var desc = data.cards[0].id;
+			<Str sr="arg0" ve="3">var data = JSON.parse(json).data.activity;
+var img_name = data.cards[0].createdAt.toString();
+var img_url = data.cards[0].imageUrl;
+var title = data.cards[0].title;
+var desc = data.cards[0].overview;
 var author = data.cards[0].author;</Str>
 			<Str sr="arg1" ve="3"/>
 			<Int sr="arg2" val="1"/>
